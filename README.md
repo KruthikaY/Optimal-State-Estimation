@@ -96,14 +96,14 @@ evaluation_metrics/compare_basic_filters
 evaluation_metrics/compare_advanced_filters
 evaluation_metrics/compare_all_filters
 
-⚠️ Output File Save Paths
+-⚠️ Output File Save Paths
 Some scripts (e.g., RPF_output.m, Imp_Grid_based_output.m) include save commands like:
 
 save('\\filestore.((location))\\RPF_output.mat', 'x_rpf');
-🔁 Replace ((location)) with a valid path on your system.
+-🔁 Replace ((location)) with a valid path on your system.
 
-Example:
-save('C:\\Users\\YourName\\Documents\\RPF_output.mat', 'x_rpf');
+-Example:
+-save('C:\\Users\\YourName\\Documents\\RPF_output.mat', 'x_rpf');
 
 This ensures that evaluation_metrics scripts can later load the saved files correctly.
 
