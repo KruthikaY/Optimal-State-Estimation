@@ -80,30 +80,50 @@ We use 3 standard metrics to assess performance:
 
 ---
 
-
 ## ▶️ How to Run
 
-1. Clone or download the repo in MATLAB.
-2. Run any of the main estimation scripts:
-   ```matlab
-   ekf
-   PF
-   Grid_based
-   UKF
-   RPF_output
+Clone or download the repo in MATLAB.
+
+Run any of the main estimation scripts:
+
+```
+ekf
+PF
+Grid_based
+UKF
+RPF_output
+```
+
 To evaluate and compare results, use:
+
+```
 evaluation_metrics/compare_basic_filters
 evaluation_metrics/compare_advanced_filters
 evaluation_metrics/compare_all_filters
+```
 
--⚠️ Output File Save Paths
-Some scripts (e.g., RPF_output.m, Imp_Grid_based_output.m) include save commands like:
+---
 
+## ⚠️ Output File Save Paths
+
+Some scripts (e.g., `RPF_output.m`, `Imp_Grid_based_output.m`) include file-saving commands like:
+
+```
 save('\\filestore.((location))\\RPF_output.mat', 'x_rpf');
--🔁 Replace ((location)) with a valid path on your system.
+```
 
--Example:
--save('C:\\Users\\YourName\\Documents\\RPF_output.mat', 'x_rpf');
+🔁 Replace `((location))` with a valid folder path on your system.
 
-This ensures that evaluation_metrics scripts can later load the saved files correctly.
+### ✅ Example
 
+```
+save('C:\\Users\\YourName\\Documents\\RPF_output.mat', 'x_rpf');
+```
+
+Or save in the current working directory:
+
+```
+save('RPF_output.mat', 'x_rpf');
+```
+
+This ensures that the `evaluation_metrics` scripts can later load the saved `.mat` files correctly.
