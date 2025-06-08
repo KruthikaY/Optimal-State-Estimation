@@ -38,24 +38,23 @@ Where:
 
 ## 📁 Repository Structure
 
-Optimal-State-Estimation/
-├── ekf.m
-├── PF.m
-├── Grid_based.m
-├── RPF_output.m
-├── UKF.m
-├── Imp_Grid_based_output.m
-├── README.md
-├── plots - tables/
-│ ├── EKF.png, PF.png, RPF.png, UKF.png, Grid_based.png, Imp_grid.png
-│ ├── EKF table.png, PF table.png, RPF table.png, UKF table.png, Grid_based table.png, Imp_grid_table.png
-│ ├── Basic_filters_comp.png, Basic_filters_table.png
-│ ├── Advanced_filters_comp.png, Advanced_filters_table.png
-│ ├── All_filters_comp.png, All_filters_table.png
-├── evaluation_metrics/
-│ ├── compare_basic_filters.m
-│ ├── compare_advanced_filters.m
-│ └── compare_all_filters.m
+- `ekf.m` – Extended Kalman Filter implementation  
+- `PF.m` – Particle Filter (SIR) implementation  
+- `Grid_based.m` – Bayesian grid filter  
+- `UKF.m` – Unscented Kalman Filter  
+- `RPF_output.m` – Regularized Particle Filter  
+- `Imp_Grid_based_output.m` – Improved MAP grid-based filter  
+- `README.md` – Project overview and usage instructions
+
+- `evaluation_metrics/` – Scripts for comparing performance:
+  - `compare_basic_filters.m`  
+  - `compare_advanced_filters.m`  
+  - `compare_all_filters.m`  
+
+- `plots - tables/` – Figures and tables for:
+  - Filter trajectories (e.g., `EKF.png`, `PF.png`, `RPF.png`, etc.)  
+  - Comparison charts: `Basic_filters_comp.png`, `Advanced_filters_comp.png`, `All_filters_comp.png`  
+  - Metric summary tables: `All_filters_table.png`, `EKF table.png`, etc.
 
 ---
 
@@ -78,13 +77,6 @@ We use 3 standard metrics to assess performance:
 | Imp_Grid_Based           | 13.8012 |  8.7512 | 4.1635  |
 | Regularized Particle     |  4.1699 |  2.3219 | 0.0053  |
 
-## 📈 Sample Plots
-
-**All Filters Together**  
-![All Filters](plots - tables/All_filters_comp.png)
-
-**Final Comparison Table (Image)**  
-![Table Summary](plots - tables/All_filters_table.png)
 
 ---
 
