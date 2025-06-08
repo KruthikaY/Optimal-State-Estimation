@@ -23,7 +23,7 @@ Where:
 
 ---
 
-## 🧠 Implemented Filters
+##  Implemented Filters
 
 | Filter      | Description |
 |-------------|-------------|
