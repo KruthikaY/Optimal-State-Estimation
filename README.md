@@ -7,7 +7,7 @@ Author: Kruthika Yogeesh Gowda
 
 ---
 
-## 🧠 Problem Definition
+## 📖 Problem Definition
 
 We consider a nonlinear discrete-time process:
 
@@ -23,7 +23,7 @@ Where:
 
 ---
 
-##  Implemented Filters
+## ✅ Implemented Filters
 
 | Filter      | Description |
 |-------------|-------------|
